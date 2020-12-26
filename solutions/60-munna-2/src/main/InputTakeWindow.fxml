@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="310.0" prefWidth="600.0" style="-fx-background-color: #b2ccdb;;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.InputTakeWindow_Controller">
+   <children>
+      <Label layoutX="36.0" layoutY="71.0" text="Type the Village Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="villageName_Text" layoutX="220.0" layoutY="69.0" prefHeight="25.0" prefWidth="252.0" promptText="village name" />
+      <Label layoutX="36.0" layoutY="124.0" text="Type the Nation Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="CreateNewVillage_Button" layoutX="241.0" layoutY="200.0" mnemonicParsing="false" onAction="#CreateNewVillage" prefHeight="48.0" prefWidth="197.0" text="Create New Village">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="NationNameComboBox" layoutX="219.0" layoutY="116.0" onAction="#SelectNation" prefHeight="31.0" prefWidth="167.0" />
+   </children>
+</AnchorPane>
